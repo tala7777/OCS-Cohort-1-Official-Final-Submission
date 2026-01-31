@@ -1,0 +1,14 @@
+[33ma4d950e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{0}: reset: moving to origin/main
+[33ma4d950e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{1}: commit: aaaaa
+[33m312e12b[m HEAD@{2}: commit: hh
+[33mf06271e[m HEAD@{3}: commit: dfdfdfd
+[33maa5040a[m HEAD@{4}: commit: dddd
+[33mea85ec7[m HEAD@{5}: commit: hh
+[33macb4f36[m HEAD@{6}: commit: gfgf
+[33m687a603[m HEAD@{7}: commit: gg
+[33m08e09d6[m HEAD@{8}: commit: jj
+[33m8c12c6e[m HEAD@{9}: commit: mm
+[33mea9f83d[m HEAD@{10}: commit: nn
+[33m1ab2a30[m HEAD@{11}: Branch: renamed refs/heads/main to refs/heads/main
+[33m1ab2a30[m HEAD@{13}: Branch: renamed refs/heads/master to refs/heads/main
+[33m1ab2a30[m HEAD@{15}: commit (initial): nn

@@ -1,0 +1,322 @@
+/* Full Screen Split Layout - Maximized Use of Space */
+:root {
+    --primary-color: #4F46E5;
+    --primary-hover: #4338ca;
+    --text-main: #1e293b;
+    --text-sub: #64748b;
+    --bg-light: #ffffff;
+    --input-bg: #f8fafc;
+    --border-color: #e2e8f0;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+.auth-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+/* LEFT SIDE - VISUALS */
+.auth-visuals {
+    flex: 1;
+    /* Takes up 50% initially */
+    background: linear-gradient(rgba(30, 58, 138, 0.85), rgba(20, 184, 166, 0.85)), url('https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem;
+    /* Increased */
+    color: white;
+}
+
+.visuals-content h2 {
+    font-size: 3.5rem;
+    /* Increased */
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.visuals-content p {
+    font-size: 1.5rem;
+    /* Increased */
+    opacity: 0.9;
+}
+
+/* RIGHT SIDE - FORM */
+.auth-form-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-light);
+    padding: 4rem;
+    /* Increased */
+    position: relative;
+    overflow-y: auto;
+}
+
+/* Form Container */
+.form-wrapper {
+    width: 100%;
+    max-width: 800px;
+    /* Increased */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* Increased */
+}
+
+/* Header Section */
+.form-header {
+    margin-bottom: 2rem;
+    /* Increased */
+}
+
+.brand-logo {
+    font-size: 2.5rem;
+    /* Increased */
+    font-weight: 900;
+    color: var(--primary-color);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.form-title {
+    font-size: 4rem;
+    /* Increased */
+    font-weight: 800;
+    color: var(--text-main);
+    margin: 0;
+    line-height: 1.1;
+}
+
+.form-subtitle {
+    font-size: 1.5rem;
+    /* Increased */
+    margin-top: 1rem;
+    color: var(--text-sub);
+}
+
+/* Inputs - Compact but Touch Friendly */
+.input-group {
+    margin-bottom: 2rem;
+    /* Increased */
+}
+
+.label-large {
+    font-size: 1.2rem;
+    /* Increased */
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+.input-large {
+    width: 100%;
+    padding: 1.5rem 1.75rem;
+    /* Increased significantly */
+    font-size: 1.25rem;
+    /* Increased */
+    border: 2px solid var(--border-color);
+    /* Thicker border */
+    border-radius: 1rem;
+    background-color: var(--input-bg);
+    transition: all 0.2s;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.input-large:focus {
+    border-color: var(--primary-color);
+    background-color: white;
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1);
+}
+
+/* Actions Row */
+.form-actions-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    /* Increased */
+    font-size: 1.1rem;
+    /* Increased */
+}
+
+.custom-check {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    color: var(--text-sub);
+}
+
+.custom-check input {
+    width: 1.5rem;
+    /* Increased */
+    height: 1.5rem;
+    /* Increased */
+    accent-color: var(--primary-color);
+}
+
+.forgot-pass {
+    font-size: 1.1rem;
+    /* Increased */
+    font-weight: 600;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Button */
+.btn-submit {
+    width: 100%;
+    padding: 1.5rem;
+    /* Increased */
+    font-size: 1.5rem;
+    /* Increased */
+    font-weight: 700;
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: var(--primary-hover);
+}
+
+/* Footer */
+.form-footer {
+    text-align: center;
+    font-size: 1.1rem;
+    /* Increased */
+    color: var(--text-sub);
+    margin-top: 2rem;
+}
+
+.form-footer a {
+    color: var(--primary-color);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* Role Selector Styles */
+.role-selector {
+    display: flex;
+    gap: 1.5rem;
+    /* Increased */
+    margin-bottom: 2rem;
+}
+
+.role-option {
+    flex: 1;
+}
+
+.role-input {
+    display: none;
+}
+
+.role-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    /* Increased */
+    border: 2px solid var(--border-color);
+    border-radius: 1.25rem;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.25rem;
+    /* Increased */
+    color: var(--text-sub);
+    transition: all 0.2s;
+    height: 100%;
+    background-color: var(--bg-light);
+}
+
+.role-label i {
+    font-size: 2.5rem;
+    /* Increased */
+    margin-bottom: 1rem;
+    color: var(--text-sub);
+}
+
+.role-label:hover {
+    border-color: var(--primary-color);
+    background-color: #f0fdfa;
+}
+
+/* Checked State */
+.role-input:checked+.role-label {
+    border-color: var(--primary-color);
+    background-color: rgba(79, 70, 229, 0.05);
+    color: var(--primary-color);
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.1);
+}
+
+.role-input:checked+.role-label i {
+    color: var(--primary-color);
+}
+
+/* Form Grid */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    /* Increased */
+}
+
+.col-span-2 {
+    grid-column: span 2;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .auth-container {
+        flex-direction: column;
+    }
+
+    .auth-visuals {
+        display: none;
+        /* Hide image on mobile */
+        flex: none;
+    }
+
+    .auth-form-side {
+        padding: 2rem;
+    }
+
+    .form-wrapper {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .col-span-2 {
+        grid-column: span 1;
+    }
+
+    .form-title {
+        font-size: 2.5rem;
+    }
+}

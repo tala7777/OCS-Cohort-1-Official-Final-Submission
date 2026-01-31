@@ -1,0 +1,95 @@
+/* Apartments Page Styles */
+.sidebar-filters {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border);
+    position: sticky;
+    top: 100px;
+}
+.custom-width-container{
+
+     max-width: 90%;
+}
+
+.filter-group {
+    margin-bottom: 2rem;
+}
+
+.filter-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.form-check-label {
+    font-weight: 500;
+    color: var(--text-main);
+    cursor: pointer;
+}
+
+.apartment-card-vertical {
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    overflow: hidden;
+    background: white;
+    transition: all 0.3s ease;
+    margin-bottom: 1.5rem;
+}
+
+.apartment-card-vertical:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-3px);
+}
+
+.apartment-card-vertical .row {
+    align-items: center;
+}
+
+.apartment-card-vertical img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    min-height: 220px;
+}
+
+.apt-price {
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.apt-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 0.5rem;
+}
+
+.apt-info {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.apt-meta {
+    display: flex;
+    gap: 1.5rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.apt-meta i {
+    color: var(--secondary);
+    margin-right: 0.4rem;
+}
+
+@media (max-width: 768px) {
+    .apartment-card-vertical img {
+        height: 200px;
+    }
+}

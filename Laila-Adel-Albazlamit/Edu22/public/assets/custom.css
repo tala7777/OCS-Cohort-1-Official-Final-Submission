@@ -1,0 +1,153 @@
+/* Custom CSS for School Management System */
+
+:root {
+    --sidebar-width: 280px;
+    --primary-color: #0d6efd;
+    --sidebar-bg: #fff;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: var(--sidebar-width);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: var(--sidebar-bg);
+    border-right: 1px solid #dee2e6;
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.main-content {
+    margin-left: var(--sidebar-width);
+    padding: 2rem;
+    min-height: 100vh;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.sidebar-brand {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    border-bottom: 1px solid #dee2e6;
+}
+
+.nav-link {
+    color: #495057;
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary-color);
+    background-color: #e9ecef;
+}
+
+.nav-link i {
+    width: 20px;
+    text-align: center;
+}
+
+/* Navbar (Mobile) */
+.mobile-navbar {
+    height: 60px;
+    background-color: #fff;
+    border-bottom: 1px solid #dee2e6;
+    display: none;
+    /* Hidden on desktop */
+    align-items: center;
+    padding: 0 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 900;
+}
+
+/* Responsive Styles */
+@media (max-width: 991.98px) {
+    .sidebar {
+        transform: translateX(-100%);
+        /* Hide sidebar by default on mobile */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .sidebar.show {
+        transform: translateX(0);
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 1.5rem;
+    }
+
+    .mobile-navbar {
+        display: flex;
+    }
+
+    /* Overlay when sidebar is open */
+    .sidebar-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        display: none;
+    }
+
+    .sidebar-overlay.show {
+        display: block;
+    }
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #fff;
+    border-top: 1px solid #dee2e6;
+    padding: 1.5rem 0;
+    margin-top: auto;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.footer-link {
+    color: #6c757d;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.2s;
+}
+
+.footer-link:hover {
+    color: var(--primary-color);
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Helper to push footer down */
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-wrapper {
+    flex: 1;
+}

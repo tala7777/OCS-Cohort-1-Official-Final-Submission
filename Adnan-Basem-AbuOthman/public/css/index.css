@@ -1,0 +1,125 @@
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(30, 58, 138, 0.8), rgba(30, 58, 138, 0.6)), url('./../img/photo-1523240795612-9a054b0db644.avif');
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Service Cards (About Us) */
+.service-card {
+    border: none;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.service-icon {
+    width: 64px;
+    height: 64px;
+    background-color: #E0E7FF;
+    color: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    margin: 0 auto 1.5rem;
+}
+
+/* University Cards */
+.university-card .card-img-top {
+    height: 250px;
+}
+
+.university-card .card-title {
+    font-weight: 700;
+    color: var(--primary);
+}
+
+
+/*new css*/
+
+.apartment-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Force the card-body to expand and push the button down */
+.apartment-card .card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* This is the "magic" line */
+}
+
+/* This pushes the button to the absolute bottom of the card-body */
+.apartment-card .btn {
+    margin-top: auto;
+}
+
+
+/*end new code*/
+
+/* Apartment Cards */
+.apartment-card .card-img-top {
+    height: 220px;
+}
+
+.apartment-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.apartment-meta {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Contact Section (Footer Area) */
+.contact-section {
+    background-color: #F3F4F6;
+    padding: 4rem 0;
+}
+
+.contact-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-md);
+}
